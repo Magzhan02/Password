@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  input{
+      margin: 0;
+      padding: 0;
+  }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+    font-size: 120%;
+    background: rgb(20, 77, 106);
+    color: #f1f4f5;
+}
+
+.container{
+    margin: 10% auto;
+    background: rgba(149,175,188,0.8);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    border: 1px solid rgba(149,175,188,0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.content h2{
+    margin: 20px;
+    padding: 0;
+}
+
+.content .new-pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.content .new-pass .copy{
+    position: absolute;
+    right: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+} 
+
+
+.content .new-pass input[type="text"]{
+    display: flex;
+    flex: 1; 
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.content .from-control{
+    margin: 5px;
+}
+
+
+.content .from-control input[type="number"]{
+    font-size: 17px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.content .btn{
+    display: flex;
+}
+
+.content .btn input[type="button"]{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    margin: 15px 0 15px 0;
+    border: none;
+    border: 1px solid rgb(20,77,106);
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(79,122,143);
+    transition: background 0.2s ease-in-out;
+}
+
+.content .btn input[type="button"]:hover{
+    background-color: rgb(20,77,106);
+}
